@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 public class FeatureActivity extends AppCompatActivity {
@@ -34,6 +36,30 @@ public class FeatureActivity extends AppCompatActivity {
 
     public void featuredOnClick(View view)
     {
+        String chennelCategory = getIntent().getExtras().getString("Chennel_Category");
+        Intent intent;
+        int position = getIntent().getExtras().getInt("tag_id");
+        switch(chennelCategory)
+        {
+            case "n":
+                //Toast.makeText(getApplicationContext(),chennelCategory+" feature tapped",Toast.LENGTH_LONG).show();
+
+                intent = new Intent(FeatureActivity.this, FeaturedPrograms.class);
+                intent.putExtra("Chennel_CategoryWise_Features", chennelCategory);
+                intent.putExtra("Chennel_Postion_In_GridView", position);
+                startActivity(intent);
+                break;
+
+            case "e":
+                //Toast.makeText(getApplicationContext(),chennelCategory+" feature tapped",Toast.LENGTH_LONG).show();
+
+                intent = new Intent(FeatureActivity.this, FeaturedPrograms.class);
+                intent.putExtra("Chennel_CategoryWise_Features", chennelCategory);
+                intent.putExtra("Chennel_Postion_In_GridView", position);
+                startActivity(intent);
+                break;
+
+        }
 
     }
     @Override

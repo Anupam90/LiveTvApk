@@ -35,18 +35,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    ImageButton ekattorImageView;
-    public void ekattorOnCLick(View view)
-    {
-        haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
-            
-        }
-        else {
-            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
-        }
-    }
 
     public void atnNewsOnClick(View view)
     {
@@ -58,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
             Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "n");
             startActivity(intent);
         }
         else
@@ -76,6 +65,7 @@ public class HomeActivity extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
             Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "n");
             startActivity(intent);
         }
         else
@@ -94,6 +84,7 @@ public class HomeActivity extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
             Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "e");
             startActivity(intent);
         }
         else
