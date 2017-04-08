@@ -17,9 +17,9 @@ public class FeatureActivity extends AppCompatActivity {
     Button btnFeatured;
 
     String[] urls = new String[]
-                    {" "," ","https://youtu.be/FUx_JX6u-r0",
-                    " "," ","https://www.youtube.com/watch?v=cvwqf_oSwNQ&feature=youtu.be",
-                    "https://youtu.be/gXVLMWv-W1A"," "," "};
+                    {"http://www.ekattor.tv/LiveTv.php","http://www.yupptv.com/channel_i_live.html","https://www.youtube.com/watch?v=G_GNwxzrRLU",
+                    "","","https://www.youtube.com/watch?v=cvwqf_oSwNQ&feature=youtu.be",
+                    "https://youtu.be/gXVLMWv-W1A","",""};
 
     public void liveOnClick(View view)
     {

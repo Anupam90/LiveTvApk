@@ -4,28 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/featured"
+    android:background="@drawable/background"
     tools:context="com.example.anupamdeb.livetv.FeatureActivity">
 
     <Button
         android:id="@+id/btnLive"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="122dp"
+        android:layout_height="80dp"
         android:background="@drawable/button"
+        android:backgroundTint="@android:color/holo_purple"
         android:onClick="liveOnClick"
         android:text="Live Telecast"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/btnFeature"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/btnLive"
         android:background="@drawable/button"
+        android:backgroundTint="?android:attr/textColorLinkInverse"
         android:onClick="featuredOnClick"
         android:text="FeaturedPrograms"
         android:textColor="@android:color/holo_blue_light"

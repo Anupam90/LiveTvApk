@@ -25,7 +25,6 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".VideoViewActivity" />
         <activity
             android:name=".FeatureActivity"
             android:theme="@style/AppTheme.NoActionBar" />
