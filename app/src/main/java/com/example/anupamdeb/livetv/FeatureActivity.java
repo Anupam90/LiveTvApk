@@ -17,9 +17,11 @@ public class FeatureActivity extends AppCompatActivity {
     Button btnFeatured;
 
     String[] urls = new String[]
-                    {"http://www.ekattor.tv/LiveTv.php","http://www.yupptv.com/channel_i_live.html","https://www.youtube.com/watch?v=G_GNwxzrRLU",
-                    "","","https://www.youtube.com/watch?v=cvwqf_oSwNQ&feature=youtu.be",
-                    "https://youtu.be/gXVLMWv-W1A","",""};
+                    {"http://www.bioscopelive.com/en/channel/ekattur-tv","http://www.bioscopelive.com/en/channel/channel-i","http://www.bioscopelive.com/en/channel/ntv",
+                            "http://www.bioscopelive.com/en/channel/sa-tv","http://www.bioscopelive.com/en/channel/independent-tv","http://www.bioscopelive.com/en/channel/atn-news",
+                    "http://www.freeintertv.com/view/id-200","http://www.bioscopelive.com/en/channel/bbc-world","http://www.freeintertv.com/view/id-3291/1-News-0-1",
+                    "http://www.bioscopelive.com/en/channel/ten-sports-1","http://www.bioscopelive.com/en/channel/ten-sports","http://www.bioscopelive.com/en/channel/vivo-ipl-2017",
+                    "http://www.bioscopelive.com/en/channel/jamuna-tv","http://www.bioscopelive.com/en/channel/maasranga-tv","http://www.bioscopelive.com/en/channel/channel-24"};
 
     public void liveOnClick(View view)
     {
@@ -59,8 +61,26 @@ public class FeatureActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
+            case "sp":
+                //Toast.makeText(getApplicationContext(),chennelCategory+" feature tapped",Toast.LENGTH_LONG).show();
+
+                intent = new Intent(FeatureActivity.this, FeaturedPrograms.class);
+                intent.putExtra("Chennel_CategoryWise_Features", chennelCategory);
+                intent.putExtra("Chennel_Postion_In_GridView", position);
+                startActivity(intent);
+                break;
+
         }
 
+    }
+
+    public void onClickWorldWeather(View view)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent.setData(Uri.parse("http://edition.cnn.com/"));
+        startActivity(intent);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

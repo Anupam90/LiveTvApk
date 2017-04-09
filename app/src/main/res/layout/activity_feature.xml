@@ -9,28 +9,42 @@
 
     <Button
         android:id="@+id/btnLive"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="80dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/button"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:onClick="liveOnClick"
         android:text="Live Telecast"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/holo_blue_bright"
         android:textSize="30sp"
-        android:layout_marginTop="54dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/btnFeature"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/btnLive"
         android:background="@drawable/button"
-        android:backgroundTint="?android:attr/textColorLinkInverse"
+        android:backgroundTint="@android:color/holo_blue_bright"
         android:onClick="featuredOnClick"
         android:text="FeaturedPrograms"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnLive"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/btnLive"
+        android:layout_below="@+id/btnFeature"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:onClick="onClickWorldWeather"
+        android:text="World Weather"
         android:textSize="30sp" />
 </RelativeLayout>

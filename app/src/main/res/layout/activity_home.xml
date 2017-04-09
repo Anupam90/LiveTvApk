@@ -8,91 +8,193 @@
     tools:context="com.example.anupamdeb.livetv.HomeActivity">
 
 
-    <GridLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="?attr/colorControlHighlight"
-        android:columnCount="3">
+        android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/ekattorImageView"
-            android:layout_width="99dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:onClick="ekattorOnCLick"
-            android:padding="4dp"
-            android:scaleType="centerCrop"
-            android:tag="0"
-            app:srcCompat="@drawable/ekattors" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-        <ImageButton
-            android:id="@+id/chennel_i_ImageView"
-            android:layout_width="99dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:onClick="iOnCLick"
-            android:padding="1dp"
-            android:scaleType="centerInside"
-            android:tag="1"
-            app:srcCompat="@drawable/chi" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/colorControlHighlight"
+                android:columnCount="3">
 
-        <ImageButton
-            android:id="@+id/ntvImageView"
-            android:layout_width="99dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:layout_marginLeft="9dp"
-            android:layout_marginRight="9dp"
-            android:onClick="ntvOnClick"
-            android:padding="4dp"
-            android:scaleType="centerCrop"
-            android:tag="2"
-            app:srcCompat="@drawable/ntv" />
+                <ImageButton
+                    android:id="@+id/ekattorImageView"
+                    android:layout_width="99dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="ekattorOnCLick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="0"
+                    app:srcCompat="@drawable/ekattors" />
 
-        <ImageButton
-            android:id="@+id/asianTvImageVIew"
-            android:layout_width="96dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:onClick="asiantvOnClick"
-            android:padding="4dp"
-            android:scaleType="centerCrop"
-            android:tag="3"
-            app:srcCompat="@drawable/asiantv" />
+                <ImageButton
+                    android:id="@+id/chennel_i_ImageView"
+                    android:layout_width="99dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="iOnCLick"
+                    android:padding="1dp"
+                    android:scaleType="centerInside"
+                    android:tag="1"
+                    app:srcCompat="@drawable/chenneli" />
 
-        <ImageButton
-            android:id="@+id/independentImageView"
-            android:layout_width="96dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:onClick="independentTvOnClick"
-            android:padding="4dp"
-            android:scaleType="centerCrop"
-            android:tag="4"
-            app:srcCompat="@drawable/inds" />
+                <ImageButton
+                    android:id="@+id/ntvImageView"
+                    android:layout_width="99dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:onClick="ntvOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="2"
+                    app:srcCompat="@drawable/ntv" />
 
-        <ImageButton
-            android:id="@+id/atnnewsImageView"
-            android:layout_width="96dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:onClick="atnNewsOnClick"
-            android:padding="4dp"
-            android:scaleType="centerCrop"
-            android:tag="5"
-            app:srcCompat="@drawable/atnnews" />
+                <ImageButton
+                    android:id="@+id/saTvImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="saTvOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="3"
+                    app:srcCompat="@drawable/satv" />
 
-        <ImageButton
-            android:id="@+id/cnnImageView"
-            android:layout_width="96dp"
-            android:layout_height="99dp"
-            android:layout_margin="11dp"
-            android:onClick="cnnNewsOnClick"
-            android:padding="4dp"
-            android:scaleType="centerCrop"
-            android:tag="6"
-            app:srcCompat="@drawable/cnn" />
-    </GridLayout>
+                <ImageButton
+                    android:id="@+id/independentImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="independentTvOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="4"
+                    app:srcCompat="@drawable/inds" />
+
+                <ImageButton
+                    android:id="@+id/atnnewsImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="atnNewsOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="5"
+                    app:srcCompat="@drawable/atnnews" />
+
+                <ImageButton
+                    android:id="@+id/cnnImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="cnnNewsOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="6"
+                    app:srcCompat="@drawable/cnn" />
+
+                <ImageButton
+                    android:id="@+id/bbcImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="bbcNewsOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="7"
+                    app:srcCompat="@drawable/bbcworldnews" />
+
+                <ImageButton
+                    android:id="@+id/aljazeeraImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="aljazeeraNewsOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="8"
+                    app:srcCompat="@drawable/aljazeera" />
+
+                <ImageButton
+                    android:id="@+id/ten1ImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="ten1_OnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="9"
+                    app:srcCompat="@drawable/ten1" />
+
+                <ImageButton
+                    android:id="@+id/tensportsTwoImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="tensportsTwoOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="10"
+                    app:srcCompat="@drawable/tensprots" />
+
+
+                <ImageButton
+                    android:id="@+id/vivoIplImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="vivoIplOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="11"
+                    app:srcCompat="@drawable/vivoipl" />
+
+                <ImageButton
+                    android:id="@+id/jamunaImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="jamunaOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="12"
+                    app:srcCompat="@drawable/jamuna" />
+
+                <ImageButton
+                    android:id="@+id/masrangaImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="masrangaOnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="13"
+                    app:srcCompat="@drawable/massranga" />
+
+                <ImageButton
+                    android:id="@+id/chennelTwentyFourImageView"
+                    android:layout_width="96dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="11dp"
+                    android:onClick="chennel24OnClick"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    android:tag="14"
+                    app:srcCompat="@drawable/chenneltf" />
+
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

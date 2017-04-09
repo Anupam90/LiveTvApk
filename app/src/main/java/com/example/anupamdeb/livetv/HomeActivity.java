@@ -8,6 +8,9 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -34,138 +37,232 @@ public class HomeActivity extends AppCompatActivity {
         return haveConnectedWifi || haveConnectedMobile;
     }
 
-    public void ekattorOnCLick(View view)
-    {
+    public void ekattorOnCLick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "e");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void iOnCLick(View view)
-    {
+    public void iOnCLick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "e");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void ntvOnClick(View view)
-    {
+    public void ntvOnClick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "e");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void asiantvOnClick(View view)
-    {
+    public void saTvOnClick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "e");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void independentTvOnClick(View view)
-    {
+    public void independentTvOnClick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "e");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void atnNewsOnClick(View view)
-    {
+    public void atnNewsOnClick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "n");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void cnnNewsOnClick(View view)
-    {
+    public void cnnNewsOnClick(View view) {
         haveNetworkConnection = haveNetworkConnection();
-        if(haveNetworkConnection==true)
-        {
+        if (haveNetworkConnection == true) {
             ImageButton tag = (ImageButton) view;
             int tappedCounter = Integer.parseInt(tag.getTag().toString());
             //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(HomeActivity.this,FeatureActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
             intent.putExtra("tag_id", tappedCounter);
             intent.putExtra("Chennel_Category", "n");
             startActivity(intent);
-        }
-        else
-        {
-            Toast.makeText(HomeActivity.this,"Please check Data or wifi connection",Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
         }
     }
+
+    public void bbcNewsOnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "n");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void aljazeeraNewsOnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "n");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void ten1_OnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "sp");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void tensportsTwoOnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "sp");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void vivoIplOnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "sp");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void jamunaOnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "e");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void masrangaOnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "e");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void chennel24OnClick(View view) {
+        haveNetworkConnection = haveNetworkConnection();
+        if (haveNetworkConnection == true) {
+            ImageButton tag = (ImageButton) view;
+            int tappedCounter = Integer.parseInt(tag.getTag().toString());
+            //Toast.makeText(getApplicationContext(),""+tappedCounter,Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(HomeActivity.this, FeatureActivity.class);
+            intent.putExtra("tag_id", tappedCounter);
+            intent.putExtra("Chennel_Category", "n");
+            startActivity(intent);
+        } else {
+            Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+        }
+    }
+
+
 
 
     @Override
@@ -173,7 +270,33 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
-
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.itemId:
+                haveNetworkConnection = haveNetworkConnection();
+                if (haveNetworkConnection == true)
+                {
+                    Intent intent = new Intent(HomeActivity.this, AboutUs.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Toast.makeText(HomeActivity.this, "Please check Data or wifi connection", Toast.LENGTH_LONG).show();
+                }
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 }
