@@ -17,11 +17,13 @@ public class FeatureActivity extends AppCompatActivity {
     Button btnFeatured;
 
     String[] urls = new String[]
-                    {"http://www.bioscopelive.com/en/channel/ekattur-tv","http://www.bioscopelive.com/en/channel/channel-i","http://www.bioscopelive.com/en/channel/ntv",
-                            "http://www.bioscopelive.com/en/channel/sa-tv","http://www.bioscopelive.com/en/channel/independent-tv","http://www.bioscopelive.com/en/channel/atn-news",
-                    "http://www.freeintertv.com/view/id-200","http://www.bioscopelive.com/en/channel/bbc-world","http://www.freeintertv.com/view/id-3291/1-News-0-1",
-                    "http://www.bioscopelive.com/en/channel/ten-sports-1","http://www.bioscopelive.com/en/channel/ten-sports","http://www.bioscopelive.com/en/channel/vivo-ipl-2017",
-                    "http://www.bioscopelive.com/en/channel/jamuna-tv","http://www.bioscopelive.com/en/channel/maasranga-tv","http://www.bioscopelive.com/en/channel/channel-24"};
+                    {"https://www.youtube.com/user/CH71TV","https://www.youtube.com/channel/UCAz6rveBalVnE6qTmfQnvyQ","https://www.youtube.com/channel/UCYqujAD5831EywH1jldBu5w",
+                    "https://www.youtube.com/channel/UCl13d2BTcnn_wQmlpWV_Ctw","https://www.youtube.com/user/independent24tube","https://www.youtube.com/channel/UCKlhfq1ILoAFav7iw5iCnfA",
+                    "https://www.youtube.com/channel/UCCNGtLTGyYKm6RhVzrnyPCA","https://www.youtube.com/channel/UCUzLhSDcbap43EyqHoWlGeg","https://www.youtube.com/user/channel24web",
+                    "https://www.youtube.com/channel/UCR0hSGudjeZfnGL3uodU9Sw","https://www.youtube.com/channel/UClVZ6GRSWj2oEUQQCW_xdaw","https://www.youtube.com/user/etvbanglaindia",
+                    "https://www.youtube.com/user/colorstv","https://www.youtube.com/user/zeetv","https://www.youtube.com/channel/UCEGpbgwmS9pHXksqWrGIOgQ",
+                    "https://www.youtube.com/user/AlJazeeraEnglish","https://www.youtube.com/user/skynews","https://www.youtube.com/user/DiscoveryNetworks",
+                    "https://www.youtube.com/user/AnimalPlanetTV","https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"};
 
     public void liveOnClick(View view)
     {
@@ -79,7 +81,7 @@ public class FeatureActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("http://edition.cnn.com/"));
+        intent.setData(Uri.parse("http://edition.cnn.com/weather"));
         startActivity(intent);
     }
     @Override

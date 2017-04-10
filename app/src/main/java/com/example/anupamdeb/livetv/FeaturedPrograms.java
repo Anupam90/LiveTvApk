@@ -18,40 +18,40 @@ public class FeaturedPrograms extends AppCompatActivity {
     ListView listView;
     ArrayAdapter<String> adapter;
 
-    String newsChennelPrograms[] = {"News", "FeaturesPrograms", "Chennel Site"};
+    String newsChennelPrograms[] = { "FeaturesPrograms", "Chennel Site"};
 
-    String entertainmentChennelPrograms[] = {"EntertainmentNews", "FeaturesPrograms", "Chennel Site"};
+    String entertainmentChennelPrograms[] = { "FeaturesPrograms", "Chennel Site"};
 
-    String sportsChennelPrograms[] = {"Sports News","FeaturesPrograms","Chennel Site"};
+    String sportsChennelPrograms[] = {"FeaturesPrograms","Chennel Site"};
 
     String chennelCategory;
 
     String[] urlsNewsSite = new String[]
-            {
-                    "https://www.youtube.com/channel/UCJx_Cy4EqFO4FRPAJDLnweA","http://www.channelionline.com/category/%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%A6%E0%A6%A8/","http://www.ntvbd.com/video/entertainment",
-                    "http://www.satv.tv/topics/popular-news-nca/","http://www.independent24.tv/Entertainment/%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%A6%E0%A6%A8","http://www.atnnewstv.com/?app=news_uncut",
-                    "http://edition.cnn.com/regions","http://www.bbc.com/news","http://www.aljazeera.com/news/",
-                    "https://twitter.com/ten_sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor","https://twitter.com/ten_sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor","http://www.iplt20.com/news",
-                    "http://www.jamunatv.net/category/Jamuna-News","http://maasranga.tv/?page_id=4596",""
-            };
+                    {"","","",
+                    "","","",
+                    "","","",
+                    "","","",
+                    "","","",
+                    "","","",
+                    "",""};
 
     String[] urlsFeaturedProgramsSite = new String[]
-            {
-                    "https://www.youtube.com/channel/UCJx_Cy4EqFO4FRPAJDLnweA","https://www.youtube.com/results?search_query=bangla+natok+","http://www.ntvbd.com/video/",
-                    "http://www.satv.tv/topics/popular-programs/","http://www.independent24.tv/Video/%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93","http://www.atnnewstv.com/?app=view_program_list",
-                    "http://edition.cnn.com/videos","http://www.bbc.com/news/video_and_audio/headlines","http://www.aljazeera.com/programmes/",
-                    "https://twitter.com/ten_sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor","https://twitter.com/ten_sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor","http://www.iplt20.com/video",
-                    "http://www.jamunatv.net/event_news","http://maasranga.tv/?page_id=5121",""
-            };
+                    {"https://www.youtube.com/user/CH71TV/videos","https://www.youtube.com/channel/UCAz6rveBalVnE6qTmfQnvyQ/videos","https://www.youtube.com/channel/UCYqujAD5831EywH1jldBu5w/videos",
+                    "https://www.youtube.com/channel/UCl13d2BTcnn_wQmlpWV_Ctw/videos","https://www.youtube.com/user/independent24tube/videos","https://www.youtube.com/channel/UCKlhfq1ILoAFav7iw5iCnfA/videos",
+                    "https://www.youtube.com/channel/UCCNGtLTGyYKm6RhVzrnyPCA/videos","https://www.youtube.com/channel/UCUzLhSDcbap43EyqHoWlGeg/videos","https://www.youtube.com/user/channel24web/videos",
+                    "https://www.youtube.com/channel/UCR0hSGudjeZfnGL3uodU9Sw/videos","https://www.youtube.com/channel/UClVZ6GRSWj2oEUQQCW_xdaw/videos","https://www.youtube.com/user/etvbanglaindia/videos",
+                    "https://www.youtube.com/user/colorstv/videos","https://www.youtube.com/user/zeetv/videos","https://www.youtube.com/channel/UCEGpbgwmS9pHXksqWrGIOgQ/videos",
+                    "https://www.youtube.com/user/AlJazeeraEnglish/videos","https://www.youtube.com/user/skynews/videos","https://www.youtube.com/user/DiscoveryNetworks/videos",
+                    "https://www.youtube.com/user/AnimalPlanetTV/videos","https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"};
 
     String[] urlsChennelSite = new String[]
-            {
-                    "http://www.ekattor.tv/","http://www.channelionline.com/","http://www.ntvbd.com/",
-                    "http://www.satv.tv/","http://www.independent24.tv","http://www.atnnewstv.com/?app=home",
-                    "https://www.cnn.com","http://www.bbc.com/","http://www.aljazeera.com/",
-                    "https://twitter.com/ten_sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor","https://twitter.com/ten_sports?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor","http://www.iplt20.com/",
-                    "http://www.jamunatv.net/","http://maasranga.tv/","http://www.channel24bd.tv/"
-            };
+                    {"http://www.ekattor.tv/","http://www.channelionline.com/","http://www.ntvbd.com/",
+                    "http://www.satv.tv/","http://www.independent24.tv/","http://www.atnnewstv.com/",
+                    "http://gazitv.com/test/","http://www.jamunatv.net/","http://www.channel24bd.tv/",
+                    "http://www.rtvonline.com/","https://www.facebook.com/Asiantvbd/","http://www.colorsbangla.com/",
+                    "http://www.colorstv.com/in/","http://www.ozee.com/zeetv","http://edition.cnn.com/",
+                    "http://www.aljazeera.com/","http://news.sky.com/","https://www.discovery.co.za/",
+                    "www.animalplanet.com/","https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"};
 
 
 
